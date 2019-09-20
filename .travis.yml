@@ -3,11 +3,12 @@ language: python
 services:
   - docker
 
-before_install:
-  - docker build -t bwoods/ltr .
-
 deploy:
   provider: script
   script: bash docker_push
   on:
     branch: master
+
+script:
+  - docker build -t bwoods/ltr .
+  - docker run bwoods/ltr jupyter nbconvert --to notebook --execute work/*.ipynb
