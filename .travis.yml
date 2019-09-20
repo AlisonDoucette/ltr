@@ -15,4 +15,4 @@ deploy:
 script:
   # test running the notebooks in and out of the container
   - docker run bwoods/ltr jupyter nbconvert --to notebook --execute work/*.ipynb
-  - jupyter nbconvert --to notebook --execute work/*.ipynb
+  - jupyter nbconvert --to notebook --execute notebooks/*.ipynb
