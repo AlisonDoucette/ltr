@@ -1,5 +1,5 @@
 # Learning to Rank
-Talk by [Bryan K. Woods, Ph.D.](mailto:bryan.k.woods@gmail.com)
+Meetup tutorial talk by [Bryan K. Woods, Ph.D.](mailto:bryan.k.woods@gmail.com)
 
 [Available on Github](https://github.com/bryan-woods/ltr)
 

@@ -21,4 +21,3 @@ RUN git clone --recursive https://github.com/dmlc/xgboost && \
 
 # add our notebooks and execute them
 COPY notebooks/* work/
-RUN jupyter nbconvert --to notebook --execute work/*.ipynb

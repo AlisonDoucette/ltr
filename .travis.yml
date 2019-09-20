@@ -1,0 +1,17 @@
+language: python
+
+services:
+  - docker
+
+install:
+  - docker build -t bwoods/ltr .
+
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
+
+script:
+  # test running the notebooks in and out of the container
+  - docker run bwoods/ltr jupyter nbconvert --to notebook --execute work/*.ipynb

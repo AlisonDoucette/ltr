@@ -1,0 +1,5 @@
+scipy
+sklearn
+xgboost
+jupyter
+nbconvert
