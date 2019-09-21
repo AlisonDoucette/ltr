@@ -14,4 +14,4 @@ deploy:
 
 script:
   # test running the notebooks in and out of the container
-  - docker run bwoods/ltr jupyter nbconvert --to notebook --execute work/*.ipynb
+  - docker run bwoods/ltr jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute work/*.ipynb
