@@ -28,4 +28,4 @@ RUN cd xgboost/demo/rank && \
     rm -fr xgboost
 
 # add our notebooks and execute them
-COPY notebooks/* work/
+COPY notebooks/*.ipynb work/
